@@ -1,0 +1,23 @@
+January 26 2016
+	-Added copy and paste
+	-Added Redo and Undo
+	-Added FlipFlop
+	-Added SideMenu
+	-Sprite class update to only have one copy for all
+	-Rework how the system handle event. All event can be process with DataCore.java
+		just send the data and the op code and every class that is linkto it will get run
+	-Move All event that are for one item into one classs. AKA All wire mouse event is in WireCore.java
+	-Added Loading and saving
+	-Rework update list to follow a path (Link list)
+	-Adding option to skip the update process (use for FilpFlop).
+
+December 28 2015
+	- Added Zoom (50% done)
+	- Movable added to the map. (50% done)
+
+December 27 2015
+	- Update the path between gates
+	- Made backup and remove unused code (mostly old Path finder)
+	- Made the program use less CPU by cutting down the FPS
+	- The Update part of the gates is now inside of another
+	  Thread to allow endless loop for the gates

@@ -1,0 +1,17 @@
+Tolaz suggests: Not working on the menu for now.
+	Sound good.
+
+Tolaz suggests: having input array list inside the gates instead of in the LogicGate class
+	I dont think it will even look nice if we do that.
+
+Tolaz and Tim suggest: find an alternative data structure to store the gates a level at a time (linked list maybe)
+	You will so need all node to be connect to display them. Think of the cps209 A2
+	If one node is not connect to the main node than you can not draw it. Or if you want to have an array of
+	all Start node then you will still need an array.
+
+Tolaz suggests: restructure the main class
+	I am for this but ATM we dont know what we need over all.
+	
+Tim suggests (in the future): implementing circular right click menu style
+	Good idea
+	
