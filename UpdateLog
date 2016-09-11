@@ -19,5 +19,5 @@ December 27 2015
 	- Update the path between gates
 	- Made backup and remove unused code (mostly old Path finder)
 	- Made the program use less CPU by cutting down the FPS
-	- The Update part of the gates is now inside of another
+	- The Update part of the gates is now inside another
 	  Thread to allow endless loop for the gates
