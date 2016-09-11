@@ -16,20 +16,20 @@ public abstract class Gate extends Logic {
      *
      */
     private static final long serialVersionUID = -1137069089101721106L;
+    protected static int X_OFFSET = 10;
+    protected static int Y_OFFSET = 15;
     /**
      * use for getShape in the subclasses
      */
     protected int yOffset;
     protected int xOffset;
-    private Shape shape;
 
     public Gate(int numberOfInput) {
         super(numberOfInput, 1);
         this.outputs[0] = new LogicState(false);
-        yOffset = (15 * getNumberOfInput());
-        xOffset = (10 * getNumberOfInput());
-      //  setBounds(xOffset, yOffset);
-        System.out.println(numberOfInput);
+        yOffset = (Y_OFFSET * getNumberOfInput());
+        xOffset = (X_OFFSET * getNumberOfInput());
+        setBounds((int) (xOffset*1.3), yOffset);
         Point[] locations = new Point[numberOfInput + 1];
         for (int i = 0; i < numberOfInput; i++) {
             locations[i] = new Point(-Wire.CONNECTION_R / 2 - 5,

@@ -8,7 +8,7 @@ public class XNORGate extends XORGate {
 
     public XNORGate(int numberOfInput) {
         super(numberOfInput);
-        setSprite(Sprite.getSprite(LogicSettings.ID_XNOR));
+        setSprite(Sprite.getSprite(LogicSettings.ID_XNOR),false);
     }
 
     @Override

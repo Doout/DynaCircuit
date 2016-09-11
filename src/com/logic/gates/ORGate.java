@@ -9,7 +9,7 @@ public class ORGate extends Gate {
 
     public ORGate(int numberOfInput) {
         super(numberOfInput);
-        setSprite(Sprite.getSprite(LogicSettings.ID_OR));
+        setSprite(Sprite.getSprite(LogicSettings.ID_OR),false);
     }
 
     @Override

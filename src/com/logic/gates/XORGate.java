@@ -9,7 +9,7 @@ public class XORGate extends Gate {
 
     public XORGate(int numberOfInput) {
         super(numberOfInput);
-        setSprite(Sprite.getSprite(LogicSettings.ID_XOR));
+        setSprite(Sprite.getSprite(LogicSettings.ID_XOR), false);
     }
 
     @Override

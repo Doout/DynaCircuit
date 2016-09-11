@@ -9,7 +9,7 @@ public class NORGate extends ORGate {
 
     public NORGate(int numberOfInput) {
         super(numberOfInput);
-        setSprite(Sprite.getSprite(LogicSettings.ID_NOR));
+        setSprite(Sprite.getSprite(LogicSettings.ID_NOR),false);
     }
 
     @Override

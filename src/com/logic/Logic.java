@@ -301,8 +301,12 @@ public abstract class Logic extends Bounds implements Updatable, Renderable,
     }
 
     public void setSprite(Sprite sprite) {
+        setSprite(sprite, true);
+    }
+
+    public void setSprite(Sprite sprite, boolean updateBound) {
         this.sprite = sprite;
-        if (sprite != null)
+        if (sprite != null && updateBound)
             setBounds(sprite.getBounds().width, sprite.getBounds().height);
     }
 

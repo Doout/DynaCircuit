@@ -12,7 +12,7 @@ public class NANDGate extends ANDGate {
 
     public NANDGate(int numberOfInput) {
         super(numberOfInput);
-        setSprite(Sprite.getSprite(LogicSettings.ID_NAND));
+        setSprite(Sprite.getSprite(LogicSettings.ID_NAND),false);
     }
 
     @Override

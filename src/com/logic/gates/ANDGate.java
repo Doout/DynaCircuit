@@ -12,7 +12,7 @@ public class ANDGate extends Gate {
 
     public ANDGate(int numberOfInput) {
         super(numberOfInput);
-        setSprite(Sprite.getSprite(LogicSettings.ID_AND));
+        setSprite(Sprite.getSprite(LogicSettings.ID_AND),false);
     }
 
     @Override
