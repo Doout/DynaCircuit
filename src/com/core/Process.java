@@ -1,7 +1,10 @@
 package com.core;
 
+/**
+ * @author Baheer Kamal
+ ***/
 public interface Process {
 
-	public Object processData(Object... objs);
+    Object processData(Object... objs);
 
 }

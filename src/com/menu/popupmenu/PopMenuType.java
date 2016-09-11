@@ -2,16 +2,16 @@ package com.menu.popupmenu;
 
 
 public enum PopMenuType {
-	BUTTON(0), LIST(1);
+    BUTTON(0), LIST(1);
 
-	PopMenuType(int type) {
-		this.type = type;
-	}
+    PopMenuType(int type) {
+        this.type = type;
+    }
 
-	int type;
+    int type;
 
-	public int getType() {
-		return type;
-	}
-	
+    public int getType() {
+        return type;
+    }
+
 }

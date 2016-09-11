@@ -7,25 +7,25 @@ import com.utils.sprite.Sprite;
 
 public class NANDGate extends ANDGate {
 
-	private static final long serialVersionUID = -8108114304317666937L;
+    private static final long serialVersionUID = -8108114304317666937L;
 
 
-	public NANDGate(int numberOfInput) {
-		super(numberOfInput);
-		setSprite(Sprite.getSprite(LogicSettings.ID_NAND));
-	}
+    public NANDGate(int numberOfInput) {
+        super(numberOfInput);
+        setSprite(Sprite.getSprite(LogicSettings.ID_NAND));
+    }
 
-	@Override
-	public void update() {
-		super.update();
-		if (!getOutput().isUnknown())
-			getOutput().setState(getOutput().getState() ^ LogicState.MASK);
-	}
+    @Override
+    public void update() {
+        super.update();
+        if (!getOutput().isUnknown())
+            getOutput().setState(getOutput().getState() ^ LogicState.MASK);
+    }
 
 
-	@Override
-	public Logic clone() {
-		Logic clo = new NANDGate(numberOfInput);
-		return clone(clo);
-	}
+    @Override
+    public Logic clone() {
+        Logic clo = new NANDGate(numberOfInput);
+        return clone(clo);
+    }
 }

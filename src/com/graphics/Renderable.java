@@ -1,8 +1,12 @@
 package com.graphics;
 
-import java.awt.Graphics2D;
+import com.sun.istack.internal.NotNull;
+import java.awt.*;
 
+/**
+ * @author Baheer Kamal
+ ***/
 public interface Renderable {
-	
-	public abstract void render(Graphics2D g);
+
+     void render(@NotNull Graphics2D g);
 }

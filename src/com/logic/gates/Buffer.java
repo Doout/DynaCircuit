@@ -1,8 +1,5 @@
 package com.logic.gates;
 
-import java.awt.Shape;
-import java.awt.geom.GeneralPath;
-
 import com.LogicState;
 import com.logic.Logic;
 import com.logic.LogicSettings;
@@ -10,25 +7,25 @@ import com.utils.sprite.Sprite;
 
 public class Buffer extends Gate {
 
-	public Buffer() {
-		super(1);
-		setSprite(Sprite.getSprite(LogicSettings.ID_BUFFER));
-		logicStateLocation[1].setLocation(logicStateLocation[1].x + 10,
-				logicStateLocation[1].y);
-	}
+    public Buffer() {
+        super(1);
+        setSprite(Sprite.getSprite(LogicSettings.ID_BUFFER));
+        logicStateLocation[1].setLocation(logicStateLocation[1].x + 10,
+                logicStateLocation[1].y);
+    }
 
-	@Override
-	public void update() {
-		if (inputs[0] != null)
-			getOutput().setState(inputs[0].getState());
-		else {
-			getOutput().setState(LogicState.UNKNOWN);
-		}
-	}
+    @Override
+    public void update() {
+        if (inputs[0] != null)
+            getOutput().setState(inputs[0].getState());
+        else {
+            getOutput().setState(LogicState.UNKNOWN);
+        }
+    }
 
-	@Override
-	public Logic clone() {
-		return clone(new Buffer());
-	}
+    @Override
+    public Logic clone() {
+        return clone(new Buffer());
+    }
 
 }

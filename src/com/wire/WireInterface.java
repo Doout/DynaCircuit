@@ -1,20 +1,20 @@
 package com.wire;
 
-import java.awt.Rectangle;
-
 import com.LogicState;
+
+import java.awt.*;
 
 public interface WireInterface {
 
-	public int getSelectIndexWire();
+    public int getSelectIndexWire();
 
-	public void setSelectIndexWire(int index);
+    public void setSelectIndexWire(int index);
 
-	public Rectangle[] getWireInputNode();
+    public Rectangle[] getWireInputNode();
 
-	public LogicState[] getInputs();
+    public LogicState[] getInputs();
 
-	public LogicState[] getOutputs();
+    public LogicState[] getOutputs();
 
-	public Rectangle[] getWireOutputNode();
+    public Rectangle[] getWireOutputNode();
 }

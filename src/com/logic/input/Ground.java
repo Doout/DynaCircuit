@@ -4,17 +4,17 @@ import com.logic.Logic;
 
 public class Ground extends Input {
 
-	public Ground() {
-		setSprite(null);
-	}
+    public Ground() {
+        setSprite(null);
+    }
 
-	@Override
-	public void update() {
-	}
+    @Override
+    public void update() {
+    }
 
-	@Override
-	public Logic clone() {
-		return clone(new Ground());
-	}
+    @Override
+    public Logic clone() {
+        return clone(new Ground());
+    }
 
 }
